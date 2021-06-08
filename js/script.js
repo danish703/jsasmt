@@ -1,47 +1,27 @@
-var myPriceList = [4545, 3434, 23, 34, 45, 2, 3];
-var sum = 0;
-for (var i = 0; i < 7; i++){
-    sum = sum + myPriceList[i];
-    //document.write(myPriceList[i]);
-    //document.write("<br/>");
-}
-//document.write("Sum=" + sum);
+// Math
+var x = 12.12;
+var y = Math.ceil(x); //ceiling round up ==> upper value roundup
+var z = Math.floor(x); //floor round up ==> lower value roundup
 
-// WAP to sum all the element of array.
-
-// WAP to identify the maximum and mininum value in the array.
-var myPriceList = [4545, 3434, 23, 11, 45, 324, 4654, 5756, 868, 35, 34, 31, 575, 8578, 45, 2, 3];
-var max = myPriceList[0];
-var min = myPriceList[0];
-
-for (var i = 1; i < myPriceList.length; i++){
-    if (max < myPriceList[i]) {
-        max = myPriceList[i];
-    }
-    if (min > myPriceList[i]) {
-        min = myPriceList[i];
-    }
-}
-
-// Write a function to check given number is prime or not.
-function isPrime(n) {
-    for (var i = 2; i < n / 2; i++){
-        if (n % i == 0) {
-            return false;
-        }
-    }
-    return true;
-}
-// display the prime number only from give array. 
-for (var i = 0; i < myPriceList.length; i++){
-    if (isPrime(myPriceList[i])) {
-        document.write(myPriceList[i] + "<br/>");
-    }
-}
-
-// document.write("<br/>");
-// document.write("Max = " + max);
-// document.write("<br/>");
-// document.write("Min= " + min+"<br/>");
-
-// document.write(isPrime(57));
+document.write(y);
+document.write("<br/>");
+document.write(z);
+document.write("<br/>");
+document.write(Math.floor(Math.random() * 11));
+document.write("<br/>");
+document.write(Math.sqrt(49));
+document.write("<br/>");
+document.write(Math.abs(-4.9));
+document.write("<br/>");
+document.write(Math.sin(45 * (Math.PI / 180)));
+document.write("<br/>");
+document.write(Math.cos(30 * (Math.PI / 180)));
+document.write("<br/>");
+document.write(Math.log(10));
+document.write("<br/>");
+document.write(Math.pow(5, 2));
+document.write("<br/>");
+document.write(Math.max(78, 45, 323, 3114, 45, 5, 67, 56, 35, 46));
+document.write("<br/>");
+document.write(Math.min(78, 45, 323, 3114, 45, 5, 67, 56, 35, 46));
+// angle in radians = angle in degree * pi/180;
